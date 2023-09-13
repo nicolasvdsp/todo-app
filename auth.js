@@ -30,7 +30,7 @@ if(btnSignup) {
 
                 let token = json.data.token;
                 localStorage.setItem("token", token);
-                window.location.href = "todo.html";
+                window.location.href = "index.html";
             }
         });
     });
@@ -56,7 +56,7 @@ if(btnLogin) {
             if (json.status === "success") {
                 let token = json.data.token;
                 localStorage.setItem("token", token);
-                window.location.href = "todo.html";
+                window.location.href = "index.html";
             } else {
                 let feedback = document.querySelector(".alert");
                 feedback.textContent = json.message.message;
